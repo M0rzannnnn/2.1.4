@@ -15,6 +15,13 @@ public class Application {
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
         }
+
+        for (int i = 0; i < 5; i++) {
+            AnimalsCage bean =
+                    applicationContext.getBean(AnimalsCage.class);
+            bean.whatTimeIsIt();
+        }
+
     }
 
 }
